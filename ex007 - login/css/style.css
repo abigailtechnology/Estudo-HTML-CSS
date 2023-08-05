@@ -1,0 +1,241 @@
+/* variaveis das cores*/
+:root {
+    /* Light */
+    --color-light-50: #F2F2F2;
+
+    /* Dark */
+    --color-dark-50: #797984;
+    --color-dark-100: #22272E;
+    --color-dark-900: #000;
+
+    /* Purple */
+    --color-pink-50: #E9749F;
+    --color-pink-100: #FCB7D0;
+    
+
+    /* Gradient */
+    --color-gradient: linear-gradient(90deg, var(--color-pink-50), var(--color-pink-100));
+}
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*body.topo{
+    background:var(--color-light-50)     
+}
+body.dark {
+    background-color: var(--color-dark-100);
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 0vh;
+    margin-right: 50px;
+    transition: background 0.2s linear;
+}
+
+h1{
+ color:#355274;
+ text-align: center;
+}*/
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px); /* Começa da esquerda*/
+    transition: transform 0.2s linear;/*usado para fazer transição suave */
+}
+
+/* Quando clicar na checkbox terá as config: */
+.checkbox:checked + .label .ball{
+    transform: translateX(24px); /* mexe o botão */
+}
+
+/*Icones*/
+.fa-moon{
+    color: #F1C40F;
+}
+.fa-sun{
+    color: #F39C12;
+}
+
+/*CODIGO NOVO*/
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-gradient);
+}
+/*Formulario*/
+.login_form {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--color-light-50);
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    animation: dark-to-light-background 0.3s ease-in-out;
+}
+/* Form Header */
+.form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form_header h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+.form_header h1::before {
+    position: absolute;
+    content: '';
+    width: 45%;
+    height: 3px;
+    background-color: var(--color-pink-50);
+    bottom: 7px;
+    border-radius: 5px;
+}
+/* Inputs */
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-box label {
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-pink-50);
+    cursor: text;
+}
+.input-field i {
+    font-size: 18px;
+    cursor: text;
+    color: var(--color-dark-900);
+} 
+.input-field input {
+    border: none;
+    width: 260px;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+/*esqueceu senha */
+.esqueceu_senha a {
+    text-decoration: none;
+    color: var(--color-dark-50);
+    font-size: 12px;
+}
+
+.esqueceu_senha a:hover {
+    color: var(--color-pink-50);
+}
+/* Login Button */
+.login_bt {
+    border: none;
+    background: var(--color-gradient);
+    padding: 7px;
+    border-radius: 3px;
+    color: var(--color-light-50);
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Social Media */
+.social_media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_media i {
+    width: 35px;
+}
+
+.social_media i:hover {
+    transform: scale(1.2);
+}
+/*link cadastro*/
+.cadastro a{
+text-decoration: none;
+color: var(--color-dark-50);
+align-items: center;
+padding-left: 60px;
+font-size: 12px;
+}
+
+.cadastro span{
+    text-decoration: none;
+    color: var(--color-pink-50);
+}
+
+/* Rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape img {
+    width: 50px;
+}
+/* Dark Mode */
+.login_form.dark {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.login_form.dark .input-field input,
+.login_form.dark .input-field i {
+    color: var(--color-light-50);
+}

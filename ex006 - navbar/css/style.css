@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root{
+ --primary-color: #F2F2F2;
+ --color-black: #313943;
+ --color-orange: #FA675C;
+ --color-icon:#FFF7F8;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--primary-color);
+}
+/*nav{
+    sposition: sticky;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black);
+    color: var(--color-icon);
+}*/
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--color-black);
+    width: 60px;
+    overflow-x: hidden;
+    padding: 1.8rem 0.85rem;
+    color: var(--color-icon);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.5s ease-in-out;
+    font-size: 32.32px;
+}
+.nav-itens{
+    list-style: none;
+    display: flex;
+   
+}
+.nav-itens li{
+    padding-left: 20px;
+}
+.links li a.selected{
+    color:var(--color-orange);
+    
+}
+
+.links li a {
+  color: var(--sidebar-gray-light);
+  font-size: 32.32;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.logo{
+
+}
+.perfil img{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    border-radius: 15%;
+    height: 32.32px;
+    width: 32.32px;
+    margin-bottom: 3px;
+}

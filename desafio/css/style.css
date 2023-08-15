@@ -42,8 +42,8 @@ nav{
 }
 .txt-intro{
     position: absolute;
-    left: 26%;
-    top:30%;
+    top: 215px;
+    left: 480px; 
     /*transform: translate(-50, -50%);*/
     color: var(--primary-color);
     text-align: center;
@@ -51,9 +51,9 @@ nav{
     padding: 5px;
 }
 .i-title{
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 800;
-    width: 400px;
+    width: 500px;
     overflow-wrap: break-word;
     word-wrap: break-word; 
     word-break: break-word;
@@ -74,23 +74,19 @@ nav{
     margin-bottom: -40px;
 }
 .grid{
+    /*border-right: solid 30px; */  
     display: grid;
-    grid-template-columns: 20%, 10%; 
-    grid-template-columns: 20%, 20%; 
-    
+    grid-template-columns: 200px, 100px; 
+    padding-bottom: 0px;
 }
 .grid div{ 
   background-color: var(--primary-color);
   text-align: center;
   align-items: center;
-  padding: 5% 10% 5%; 
+  padding: 50px 0px; 
 }
 .grid img{
-    width: 70%;
-    height: 50%;
-    object-fit: cover;
-
-    
+    padding-left: 20px;  
 }
 .leg-s{
     margin-left: auto;
@@ -110,10 +106,12 @@ nav{
     font-style: italic;
 }
 .atxt{
-    left: 32%;
-    top:100%;
-  /* top:30em;
-    left: 297px;*/
+    /*left: 250px;
+    top:30em;*/
+   top:30em;
+   /* left:17.5em;*/
+   
+    left: 297px;
     text-align: center;
     align-items: center;
     background-color: var(--button);
@@ -167,7 +165,62 @@ nav{
     word-break: break-word;
 
 }
-#portifolio{
+.fourth-section {
+  padding: 60px 0 20px 0;
+}
+
+
+.Portifolio container {
+  margin-bottom: 40px;
+}
+
+
+.Portifolio-img,
+.infosPortifolio {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+.Portifolio-img img {
+  display: block;
+  max-width: 580%;
+}
+
+
+.infosPortifolio h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+
+.infosPortifolio p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
+}
+
+
+.infosPortifolio a {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid;
+  color: #252525;
+  padding: 8px 20px;
+}
+
+
+@media (max-width: 739px) {
+  .Portifolio-img,
+  .infosPortifolio {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/*#portifolio{
     /*background-color:var(--primary-color);
     background-color: red;
     display: grid;
@@ -175,7 +228,7 @@ nav{
     /*text-align: center;
   align-items: center;
     padding-left: 320px; 
-    padding-bottom: ;*/
+    padding-bottom: ;
     
 }
 
@@ -221,12 +274,34 @@ nav{
     margin-top: auto;
     margin-left: 50em;
 }
+.btn-email{
+    padding: 10px 0px;
+    font-size: 15px;
+    font-style: italic;
+    border: solid 2px;
+    width: 180px;
+    border-color: var(--button);
+    color: gray;
+    background-color: transparent;
+    cursor: pointer;
+    /*margin-top: auto;
+    margin-left: 50em;*/
+}
+.email{
+    padding: 10px 0px;
+    font-size: 15px;
+    border: solid 2px;
+    width: 150px;
+    border-color: #000;
+    color: #FAFAFA;
+    background-color: #000;
+    cursor: pointer;
+    /*margin-top: auto;
+    margin-left: 50em;*/
+}
 /*Menu contato*/
 #contato{
     background-color: var(--secondary-color); 
-}
-#contato input{
-    font-style: italic;
 }
 .tit{
     font-size: 30px;
@@ -268,3 +343,10 @@ nav{
     text-decoration: none;
     justify-content: space-around;
 }
+
+ @media screen and (max-widht: 768px){
+        .container{
+            width: 100%;
+            flex-direction: column;
+        }
+    }

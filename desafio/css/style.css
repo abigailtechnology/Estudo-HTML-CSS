@@ -1,17 +1,17 @@
 :root{
     --primary-color: #FAFAFA;
     --secondary-color: #E8E4D8;
-    --button: #1A120F;
-    --icon1:#4B2509;
-    --icon2:#D97233;
-    --icon3:#E7A849;  
+    --button: #1A120F; 
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+}
+.container{
+    width: 100%;
+    justify-content: space-between;
 }
 .logo img{
     padding-right: 0px; 
@@ -36,6 +36,7 @@ nav{
     color: var(--primary-color);
     text-decoration: none;
 }
+
 /* img do topo*/
 #intro img{
     width: 100%;
@@ -43,8 +44,7 @@ nav{
 .txt-intro{
     position: absolute;
     top: 215px;
-    left: 480px; 
-    /*transform: translate(-50, -50%);*/
+    left: 32%; 
     color: var(--primary-color);
     text-align: center;
     background-color: transparent;
@@ -60,12 +60,13 @@ nav{
 }
 .tit-s{
     font-style: italic;
-   margin-top: -10px;
+   margin-top: 2%;
 }
 
 /*Menu Sobre*/
 #sobre{
-    background-color:var(--primary-color);  
+    background-color:var(--primary-color);
+    height: 800%;
 }
 .s-title{
     font-weight: 600;
@@ -73,8 +74,7 @@ nav{
     align-items: center;
     margin-bottom: -40px;
 }
-.grid{
-    /*border-right: solid 30px; */  
+.grid{ 
     display: grid;
     grid-template-columns: 200px, 100px; 
     padding-bottom: 0px;
@@ -105,12 +105,10 @@ nav{
     font-size: 30px;
     font-style: italic;
 }
+
+/*Caixas de texto*/
 .atxt{
-    /*left: 250px;
-    top:30em;*/
-   top:30em;
-   /* left:17.5em;*/
-   
+    top:30em;
     left: 297px;
     text-align: center;
     align-items: center;
@@ -118,8 +116,6 @@ nav{
     color: var(--secondary-color);
 }
 .ptxt{
-   /* left: 50%;
-    top:118%;*/
     top:30em;
     left:26.05em;
     text-align: center;
@@ -127,18 +123,47 @@ nav{
     background-color: var(--button);
     color: var(--secondary-color);
 }
-/*Menu Produto*/
-#produto{
-    background-color: var(--secondary-color);
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 25);
 
+/*Menu Produto*/
+#produto {
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 500px;
+    margin-top: 0%;
+    padding: 2px 2px 2px;
+    border-bottom: 3px solid #D8D4C9;
+    border-top: 3px solid #D8D4C9;
+}
+.prod-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-left: 5%;
+}
+.prod-pa{
+    width: 60%;
+}
+.prod-ca{
+    width: 60%;
+}
+.prod-mi{
+    width: 60%;
 }
 .icon{
-    margin-left: 300px;
-  font-size: 10em; 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    font-size: 150px;
 }
 #icon-pa{
-    width: px;
     color: #4B2509;
   }
 #icon-ca{ 
@@ -148,102 +173,68 @@ nav{
     color: #E7A849;
 }
 .title{
-    margin-left: 300px;
-    font-weight: 800;
-    font-size: 30px;
-    align-items: center;
-    text-align: center;
-    display: flex;
+    font-size: 25px;
+    padding-top: 5%;
 }
 .leg-p{
-    margin-left: 300px;
-    font-size: 12px;
-    align-items: center;
-    width: 250px;
+    display: block;
+    text-align: start;
+    font-size: 14px;
+    padding-left: 20%;
+    width: 80%;
     overflow-wrap: break-word;  
     word-wrap: break-word; 
     word-break: break-word;
-
-}
-.fourth-section {
-  padding: 60px 0 20px 0;
 }
 
-
-.Portifolio container {
-  margin-bottom: 40px;
+/*Menu Portifolio*/
+#portifolio{
+    background-color:var(--primary-color);
+    padding: 2% 15% 2%;  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
 }
-
-
-.Portifolio-img,
-.infosPortifolio {
-  flex: 1;
-  margin: 0 10px;
+.port-info{
+    flex: auto;
+    padding: 4% 2% 2%;
+    display: flex;
 }
-
-
-.Portifolio-img img {
-  display: block;
-  max-width: 580%;
+.port-info article{ 
+    max-width: 85%;
+    position: relative;
+    overflow: hidden;
+    padding-right: 20px;
+    display: inline;
 }
-
-
-.infosPortifolio h2 {
-  font-size: 2.25em;
-  margin-bottom: 20px;
-}
-
-
-.infosPortifolio p {
-  font-size: 1.125em;
-  line-height: 1.4em;
-  max-width: 320px;
-  margin-bottom: 40px;
-}
-
-
-.infosPortifolio a {
-  font-size: 1.125em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 3px solid;
-  color: #252525;
-  padding: 8px 20px;
-}
-
-
-@media (max-width: 739px) {
-  .Portifolio-img,
-  .infosPortifolio {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-/*#portifolio{
-    /*background-color:var(--primary-color);
-    background-color: red;
-    display: grid;
-    grid-template-columns: 200px,auto, 200px;
-    /*text-align: center;
-  align-items: center;
-    padding-left: 320px; 
-    padding-bottom: ;
+.port-info article img{ 
+    display: block;
+    position: relative;
+    overflow: hidden;
     
 }
-
-/*.grid{ 
-    display: grid;
-    grid-template-columns: 200px, 100px; 
-    padding-bottom: 0px;
+ .port-info article h2{
+    margin: 0 0 18px 0;
+ }
+.port-info figure{
+    padding-right: 2%;
 }
-.grid div{ 
-  background-color: var(--primary-color);
-  
+ 
+ /*Textos de port*/
+.text-p {
+    line-height: 1.4em;
+    margin-bottom: 40px;
 }
-.grid img{
-    padding-left: 20px;  
-}*/
+.leg-pt{
+    margin-right: auto;
+    font-size: 18px;
+    align-items: start;
+    width: 300px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
 /*Botões*/
 .button {
     padding: 10px 0px;
@@ -255,11 +246,11 @@ nav{
     color: var(--button);
     background-color: transparent;
     cursor: pointer;
-  
 }
 .button:hover{
     background-color: var(--button);
     color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
 }
 .btn{
     padding: 10px 0px;
@@ -271,48 +262,53 @@ nav{
     color: var(--button);
     background-color: transparent;
     cursor: pointer;
-    margin-top: auto;
-    margin-left: 50em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 2%;
+}
+.btn:hover{
+    background-color: var(--button);
+    color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
 }
 .btn-email{
-    padding: 10px 0px;
-    font-size: 15px;
+    background-color: var(--secondary-color);
     font-style: italic;
+    font-size: 20px;
     border: solid 2px;
-    width: 180px;
     border-color: var(--button);
-    color: gray;
-    background-color: transparent;
+    color: #9A9A9A;
     cursor: pointer;
-    /*margin-top: auto;
-    margin-left: 50em;*/
 }
 .email{
-    padding: 10px 0px;
-    font-size: 15px;
-    border: solid 2px;
-    width: 150px;
-    border-color: #000;
+    font-size: 20px;
+    border: none;
     color: #FAFAFA;
-    background-color: #000;
+    background-color: #22272E;
     cursor: pointer;
-    /*margin-top: auto;
-    margin-left: 50em;*/
 }
+
 /*Menu contato*/
 #contato{
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    overflow: hidden; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.ctxt{
+    padding: 0px 40px;
+    margin-right: 50px;
+    text-align: start;
 }
 .tit{
     font-size: 30px;
     font-weight: 800;
-    margin-left: 320px;
-    align-items: center;
 }
 .leg{
-    align-items: center;
-    margin-left: 320px;
-    margin-right: auto;
     font-style: italic;
     font-size: 18px;
     width: 600px;
@@ -320,33 +316,45 @@ nav{
     word-wrap: break-word; 
     word-break: break-word;
 }
+.inputs{
+    display: flex;
+}
 .inputs input{
-    display: block;
-  
+    width: 300px;
+    padding: 5px 10px 5px 5px;
+}
+.inputs button{
+    width: 150px;
+    height: 35px;
+    padding: 5px 10px 5px 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 /*Rodape*/
 #rodape{
     display: flex;
-    list-style: none;
-   /* display: flex;
-   padding-top: 30px;
-   padding-left: 320px;
-    /*align-items: center;
-    justify-content: space-between;*/
-   
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
     background-color: #D8D4C9;
 }
-#rodape li p{
-   /* padding: 20px;
-    color: var(--primary-color);
-    text-decoration: none;
-    justify-content: space-around;
+#rodape  p{
+    font-size: 18px;
+    margin-right: 40px;
+    text-align: start;
 }
 
- @media screen and (max-widht: 768px){
-        .container{
-            width: 100%;
-            flex-direction: column;
-        }
+@media screen and (max-widht: 780px){
+    .container{
+        width: 100%;
+        flex-direction: column;
     }
+}
+ 
+
+
+

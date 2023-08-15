@@ -2,19 +2,12 @@
 <html lang="pt-BR">
 
 <head>
-
-    <script>
-        function enviarEmail() {
-           /* window.alert("E-mail enviado!");*/
-           pr
-        }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brafé</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -31,139 +24,155 @@
             </ul>
         </div>
     </nav>
-    <div id="intro">
-        <img src="img/bg-intro.jpg" alt="Café">
-    </div>
+
+    <div class="container">
+        <div id="intro">
+            <img src="img/bg-intro.jpg" alt="Café">
+        </div>
+
         <div class="txt-intro">
             <p class="i-title">CAFÉS COM A CARA DO BRASIL</p>
             <p class="i-title">-</p>
             <p class="tit-s">Direto das fazendas de Minas Gerais</p>
-        </div>
-    </div>
-    <div id="sobre">
-        <div class="grid">
-            <div class="s-title">
-                <p>Uma Mistura de</p>
-            </div>
-            <div><img src="img/cafe-1.jpg"> <img src="img/cafe-2.jpg"></div>
-            <p class="leg-s"> O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro. É servido
-                tradicionalmente quente, mas também pode ser consumido gelado. Ele é um estimulante, por possuir
-                cafeína — geralmente 80 a 140 mg para cada 207ml dependendo do método de preparação.</p>
-            <div class="txt">
-                <p class="atxt">amor</p>
-            </div>
-            <div class="txt">
-                <p class="ptxt">perfeição</p>
-                
-            </div>
-                
-        </div>
-    </div>
 
-    <div id=produto>
-        <table>
-            <tr >
-                <td>
-                    <iconify-icon icon="carbon:circle-filled" class="icon" id="icon-pa"></iconify-icon>
-                    <p class="title">Paulista</p>
-                    <p class="leg-p">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: O João Alberto Castelo Branco trouxe mudas do Pará.
-                    </p>
-                </td>
-                <td #icon-ca>
-                    <iconify-icon icon="carbon:circle-filled" class="icon" id="icon-ca"></iconify-icon>
-                    <p class="title">Carioca</p>
-                    <p class="leg-p">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: O João Alberto Castelo Branco trouxe mudas do Pará.
-                    </p>
-                </td>
-                <td>
-                    <iconify-icon icon="carbon:circle-filled" class="icon" id="icon-mi"></iconify-icon>
-                    <p class="title">Mineiro</p>
-                    <p class="leg-p">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: O João Alberto Castelo Branco trouxe mudas do Pará.
-                    </p>
-                </td>
-            </tr>
-            <tr class="btn">
-                <button href="#" class="btn">SAIBA MAIS</button>   
-            </tr>
-        </table>
+        </div>
 
-    </div>
-    <section id="portifolio" class="fourth-section">
-        <div class="portifolio container">
-            <div class="portifolioImg"> <!--Ver esse erro-->
-                <img src="img/botafogo.jpg" alt="foto cafeteria Botafogo">
+        <div id="sobre">
+            <div class="grid">
+                <div class="s-title">
+                    <p>Uma Mistura de</p>
+                </div>
+                <div><img src="img/cafe-1.jpg" alt="Café Amor"> <img src="img/cafe-2.jpg" alt="Café perfeição"></div>
+                <p class="leg-s"> O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro. É
+                    servido
+                    tradicionalmente quente, mas também pode ser consumido gelado. Ele é um estimulante, por possuir
+                    cafeína — geralmente 80 a 140 mg para cada 207ml dependendo do método de preparação.</p>
+                <div class="txt">
+                    <p class="atxt">amor</p>
+                </div>
+                <div class="txt">
+                    <p class="ptxt">perfeição</p>
+                </div>
             </div>
-            <div class="infosPortifolio"> <!--Será que confundi com o portifolio container?-->
+        </div>
+        <div id="produto">
+            <div class="prod-container">
+                <div class="prod-pa">
+                    <div class="icon">
+                        <iconify-icon icon="carbon:circle-filled" id="icon-pa"></iconify-icon>
+                    </div>
+                    <div class="title">
+                        <h2>Paulista</h2>
+                    </div>
+                    <div class="leg-p">
+                        <p>
+                            As condições climáticas não eram as melhores
+                            nessa primeira escolha e, entre 1800 e 1850
+                            tentou-se o cultivo noutras regiões: o João
+                            Alberto Castelo Branco trouxe mudas do Pará.
+                        </p>
+                    </div>
+                </div>
+                <div class="prod-ca">
+                    <div class="icon">
+                        <iconify-icon icon="carbon:circle-filled" id="icon-ca"></iconify-icon>
+                    </div>
+                    <div class="title">
+                        <h2>Carioca</h2>
+                    </div>
+                    <div class="leg-p">
+                        <p>
+                            As condições climáticas não eram as melhores
+                            nessa primeira escolha e, entre 1800 e 1850
+                            tentou-se o cultivo noutras regiões: o João
+                            Alberto Castelo Branco trouxe mudas do Pará.
+                        </p>
+                    </div>
+                </div>
+               <div class="prod-mi">
+                    <div class="icon">
+                        <iconify-icon icon="carbon:circle-filled" id="icon-mi"></iconify-icon>
+                    </div>
+                    <div class="title">
+                        <h2>Mineiro</h2>
+                    </div>
+                    <div class="leg-p">
+                        <p>
+                            As condições climáticas não eram as melhores
+                            nessa primeira escolha e, entre 1800 e 1850
+                            tentou-se o cultivo noutras regiões: o João
+                            Alberto Castelo Branco trouxe mudas do Pará.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button href="#" class="btn">SAIBA MAIS</button>
+        </div>
+
+    <span id="portifolio">
+        <selection class="port-info">
+            <article>
+                <figure>
+                    <img src="img/botafogo.jpg" alt="Cafeteria Botafogo">
+                </figure>
+            </article>
+            <div class="text-p">
                 <h2>Botafogo</h2>
-                <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
-                <!--Quero colocar botão?-->
-                <a href="#">Ver Mapa</a>
+                <p class="leg-pt">As condições climáticas não eram as
+                    melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+                <button href="#" class="btn">VER MAPA</button>
             </div>
-        </div>
-        <div class="portifolio container">
-            <div class="portifolioImg">
-                <img src="img/iguatemi.jpg" alt="foto cafeteria Iguatemi">
-            </div>
-            <div class="infosPortifolio">
+        </selection>
+        <selection class="port-info">
+            <article>
+                <figure>
+                    <img src="img/iguatemi.jpg" alt="Cafeteria Iguatemi">
+                </figure>
+            </article>
+            <div class="text-p">
                 <h2>Iguatemi</h2>
-                <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
-                <a href="#">Ver Mapa</a>
+                <p class="leg-pt">As condições climáticas não eram as
+                    melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+                <button href="#" class="btn">VER MAPA</button>
             </div>
-        </div>
-        <div class="portifolio container">
-            <div class="portifolioImg">
-                <img src="img/mineirao.jpg" alt="foto cafeteria Mineirão">
-            </div>
-            <div class="infosPortifolio">
+        </selection>
+        <selection class="port-info">
+            <article>
+                <figure>
+                    <img src="img/mineirao.jpg" alt="Cafeteria Mineirão">
+                </figure>
+            </article>
+            <div class="text-p">
                 <h2>Mineirão</h2>
-                <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
-                <a href="#">Ver Mapa</a>
+                <p class="leg-pt">As condições climáticas não eram as
+                    melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+                <button href="#" class="btn">VER MAPA</button>
             </div>
-        </div>
-    </section>
-
-
-
-
-
-
-   <!-- <div id="portifolio">
-                    <img src="img/botafogo.jpg"><p class="title">Botafogo</p>
-           <p class="leg-p">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>        
-          
-                    <button href="#" class="btn">SAIBA MAIS</button>   
-               
-                <img src="img/iguatemi.jpg">
-                 <p class="title">Iguatemi</p>
-                 <p class="leg-p">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e
-                        1850, tentou-se o cultivo.</p>
-                    <button href="#" class="button">VER NO MAPA</button>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/mineirao.jpg">
-                    <p class="title">Mineirão</p>
-                    <p class="body">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e
-                        1850, tentou-se o cultivo.</p>
-                    <button href="#" class="button">VER NO MAPA</button>
-                </td>
-            </tr>
-        </table>
-    </div>-->
+        </selection>
+    </span>
+    
     <div id="contato">
+        <div class="ctxt">
         <p class="tit">Assine Nossa Newsletter</p>
         <p class="leg">promoções e eventos mensais</p>
-        <input type="email" value="Digite seu e-mail" class="btn-email" onfocus="this.value='';" onblur="this.value='Digite seu e-mail';">
-        <input type="button" value="ENVIAR" onclick="enviarEmail" class="email" >
-       
+        </div>
+        <div class="inputs">
+            <input type="email" value="Digite seu e-mail" id="email" class="btn-email" 
+            onfocus="this.value='';" onblur="this.value='Digite seu e-mail';">
+            <button type="button" onclick="enviarEmail" class="email" id="enviar">Enviar</button>
+        </div>
     </div>
+
     <div id="rodape">
-        <p >Este é um projeto da Origamid. Mais em origamid.com</p>
-        <p>Praia de Botafogo, 300, 5°andar - Botafogo - Rio de Janeiro</p>
-        <img src="img/brafe.png" alt="logo">
+        <div class="text-r">
+            <p>Este é um projeto da Origamid. Mais em origamid.com</p>
+            <p>Praia de Botafogo, 300, 5°andar - Botafogo - Rio de Janeiro</p>
+        </div>
+            <img src="img/brafe.png" alt="logo">
     </div>
     <!--JAVA SCRIPT-->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

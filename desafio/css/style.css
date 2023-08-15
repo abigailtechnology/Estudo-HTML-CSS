@@ -13,13 +13,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
-#logo a{
-    color: var(--primary-color);
-    font-weight: 800;
-    font-size: 35px;
-    text-decoration: none;
-    margin-top: 80px;
-   
+.logo img{
+    padding-right: 0px; 
 }
 /*NavBar*/
 nav{
@@ -43,27 +38,25 @@ nav{
 }
 /* img do topo*/
 #intro img{
-    
     width: 100%;
 }
 .txt-intro{
     position: absolute;
-    top: 20%;
-    left: 32%; 
-    transform: translate(-50, -50%);
+    left: 26%;
+    top:30%;
+    /*transform: translate(-50, -50%);*/
     color: var(--primary-color);
     text-align: center;
     background-color: transparent;
     padding: 5px;
 }
 .i-title{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 800;
-    width: 500px;
+    width: 400px;
     overflow-wrap: break-word;
     word-wrap: break-word; 
     word-break: break-word;
-
 }
 .tit-s{
     font-style: italic;
@@ -82,123 +75,24 @@ nav{
 }
 .grid{
     display: grid;
-    grid-template-columns: 200px, 100px; 
-    padding-bottom: 0px;
+    grid-template-columns: 20%, 10%; 
+    grid-template-columns: 20%, 20%; 
+    
 }
 .grid div{ 
   background-color: var(--primary-color);
   text-align: center;
   align-items: center;
-  padding: 50px 0px; 
+  padding: 5% 10% 5%; 
 }
 .grid img{
-    border-right: 10px;   
-}
-.txt p{
-    position: absolute;
-    padding: 10px 50px 10px 50px;
-    font-size: 30px;
-    font-style: italic;
-}
-.atxt{
-    left: 300px;
-    top:30em;
-    text-align: center;
-    align-items: center;
-    background-color: var(--button);
-    color: var(--secondary-color);
-}
-.ptxt{
-    left: 50%;
-    top:118%;
-    text-align: center;
-    align-items: center;
-    background-color: var(--button);
-    color: var(--secondary-color);
-}
-/*Menu Produto*/
-#produto {
-    background-color: var(--secondary-color);
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 25);
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
 
+    
 }
-.icon{
-  font-size: 10em;
-  margin-left: 400px;
-    margin-right: 500px;
-}
-#icon-pa{
-    width: px;
-    /*margin-left: 500px;
-    margin-right: 500px;*/
-    color: #4B2509;
-  }
-#icon-ca{
-   /* margin-left: 500px;
-    margin-right: 500px;*/  
-    color:#D97233
-}
-#icon-mi{
-    color: #E7A849;
-}
-.title{
-    margin-left: auto;
-    font-weight: 800;
-    font-size: 30px;
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-    gap: 50px;
-}
-.leg-p{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
-    width: 250px;
-    overflow-wrap: break-word;  
-    word-wrap: break-word; 
-    word-break: break-word;
-
-}
-#portifolio{
-    display: grid;
-    text-align: center;
-    background-color:var(--primary-color);
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 200px,200px, 200px;
-}
-
-/*Botões*/
-.button {
-    padding: 10px 40px;
-    font-size: 15px;
-    font-weight: 600;
-    border: solid 2px;
-    border-color: var(--button);
-    color: var(--button);
-    background-color: transparent;
-    cursor: pointer;
-  
-}
-.button:hover{
-    background-color: var(--button);
-    color: var(--secondary-color);
-}
-
-/*Menu contato*/
-#contato{
-    background-color: var(--secondary-color); 
-}
-#contato input{
-    font-style: italic;
-}
-.tit{
-    font-weight: 600;
-}
-.leg{
+.leg-s{
     margin-left: auto;
     margin-right: auto;
     font-style: italic;
@@ -209,23 +103,168 @@ nav{
     word-wrap: break-word; 
     word-break: break-word;
 }
+.txt p{
+    position: absolute;
+    padding: 10px 50px 10px 50px;
+    font-size: 30px;
+    font-style: italic;
+}
+.atxt{
+    left: 32%;
+    top:100%;
+  /* top:30em;
+    left: 297px;*/
+    text-align: center;
+    align-items: center;
+    background-color: var(--button);
+    color: var(--secondary-color);
+}
+.ptxt{
+   /* left: 50%;
+    top:118%;*/
+    top:30em;
+    left:26.05em;
+    text-align: center;
+    align-items: center;
+    background-color: var(--button);
+    color: var(--secondary-color);
+}
+/*Menu Produto*/
+#produto{
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 25);
+
+}
+.icon{
+    margin-left: 300px;
+  font-size: 10em; 
+}
+#icon-pa{
+    width: px;
+    color: #4B2509;
+  }
+#icon-ca{ 
+    color:#D97233
+}
+#icon-mi{
+    color: #E7A849;
+}
+.title{
+    margin-left: 300px;
+    font-weight: 800;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.leg-p{
+    margin-left: 300px;
+    font-size: 12px;
+    align-items: center;
+    width: 250px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+
+}
+#portifolio{
+    /*background-color:var(--primary-color);
+    background-color: red;
+    display: grid;
+    grid-template-columns: 200px,auto, 200px;
+    /*text-align: center;
+  align-items: center;
+    padding-left: 320px; 
+    padding-bottom: ;*/
+    
+}
+
+/*.grid{ 
+    display: grid;
+    grid-template-columns: 200px, 100px; 
+    padding-bottom: 0px;
+}
+.grid div{ 
+  background-color: var(--primary-color);
+  
+}
+.grid img{
+    padding-left: 20px;  
+}*/
+/*Botões*/
+.button {
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    border: solid 2px;
+    width: 150px;
+    border-color: var(--button);
+    color: var(--button);
+    background-color: transparent;
+    cursor: pointer;
+  
+}
+.button:hover{
+    background-color: var(--button);
+    color: var(--secondary-color);
+}
+.btn{
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    border: solid 2px;
+    width: 150px;
+    border-color: var(--button);
+    color: var(--button);
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: auto;
+    margin-left: 50em;
+}
+/*Menu contato*/
+#contato{
+    background-color: var(--secondary-color); 
+}
+#contato input{
+    font-style: italic;
+}
+.tit{
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 320px;
+    align-items: center;
+}
+.leg{
+    align-items: center;
+    margin-left: 320px;
+    margin-right: auto;
+    font-style: italic;
+    font-size: 18px;
+    width: 600px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
 .inputs input{
     display: block;
+  
 }
 
 /*Rodape*/
 #rodape{
-    align-items: center;
     display: flex;
-    justify-content: space-around;
+    list-style: none;
+   /* display: flex;
+   padding-top: 30px;
+   padding-left: 320px;
+    /*align-items: center;
+    justify-content: space-between;*/
+   
     background-color: #D8D4C9;
 }
-#rodape img{
-    display: flex;
+#rodape li p{
+   /* padding: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
     justify-content: space-around;
 }
-
- 
-
-
-

@@ -62,7 +62,7 @@
 
     <div id=produto>
         <table>
-            <tr class="grid">
+            <tr >
                 <td>
                     <iconify-icon icon="carbon:circle-filled" class="icon" id="icon-pa"></iconify-icon>
                     <p class="title">Paulista</p>
@@ -88,21 +88,54 @@
         </table>
 
     </div>
-    <div id="portifolio">
-        <table>
-            <tr>
-                <td>
-                    <img src="img/botafogo.jpg">
-                </td>
-            </tr>
-            <p class="title">Botafogo</p>
-           <p class="body">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
-                    <button href="#" class="button">VER MAPA</button>    
-                  
-            <tr>
+    <section id="portifolio" class="fourth-section">
+        <div class="portifolio container">
+            <div class="portifolioImg"> <!--Ver esse erro-->
+                <img src="img/botafogo.jpg" alt="foto cafeteria Botafogo">
+            </div>
+            <div class="infosPortifolio"> <!--Será que confundi com o portifolio container?-->
+                <h2>Botafogo</h2>
+                <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+                <!--Quero colocar botão?-->
+                <a href="#">Ver Mapa</a>
+            </div>
+        </div>
+        <div class="portifolio container">
+            <div class="portifolioImg">
+                <img src="img/iguatemi.jpg" alt="foto cafeteria Iguatemi">
+            </div>
+            <div class="infosPortifolio">
+                <h2>Iguatemi</h2>
+                <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+                <a href="#">Ver Mapa</a>
+            </div>
+        </div>
+        <div class="portifolio container">
+            <div class="portifolioImg">
+                <img src="img/mineirao.jpg" alt="foto cafeteria Mineirão">
+            </div>
+            <div class="infosPortifolio">
+                <h2>Mineirão</h2>
+                <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+                <a href="#">Ver Mapa</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+   <!-- <div id="portifolio">
+                    <img src="img/botafogo.jpg"><p class="title">Botafogo</p>
+           <p class="leg-p">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>        
+          
+                    <button href="#" class="btn">SAIBA MAIS</button>   
+               
                 <img src="img/iguatemi.jpg">
-                <!--  <p class="title">Iguatemi</p>
-                 <p class="body">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e
+                 <p class="title">Iguatemi</p>
+                 <p class="leg-p">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e
                         1850, tentou-se o cultivo.</p>
                     <button href="#" class="button">VER NO MAPA</button>
             </tr>
@@ -112,27 +145,22 @@
                     <p class="title">Mineirão</p>
                     <p class="body">As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e
                         1850, tentou-se o cultivo.</p>
-                    <button href="#" class="button">VER NO MAPA</button>-->
+                    <button href="#" class="button">VER NO MAPA</button>
                 </td>
             </tr>
         </table>
-    </div>
+    </div>-->
     <div id="contato">
         <p class="tit">Assine Nossa Newsletter</p>
         <p class="leg">promoções e eventos mensais</p>
         <input type="email" value="Digite seu e-mail" class="btn-email" onfocus="this.value='';" onblur="this.value='Digite seu e-mail';">
-        <input type="button" value="Enviar" onclick="enviarEmail" class="btn-email" >
-        </form>
+        <input type="button" value="ENVIAR" onclick="enviarEmail" class="email" >
+       
     </div>
     <div id="rodape">
-
-
-        <ul>
-            <li>
-                <p>Este é um projeto da Origamid. Mais em origamid.com</p>
-                <p>Praia de Botafogo, 300, 5°andar - Botafogo - Rio de Janeiro</p>
-            </li>
-        <div class="logo"><img src="img/brafe.png" alt="logo"></div>
+        <p >Este é um projeto da Origamid. Mais em origamid.com</p>
+        <p>Praia de Botafogo, 300, 5°andar - Botafogo - Rio de Janeiro</p>
+        <img src="img/brafe.png" alt="logo">
     </div>
     <!--JAVA SCRIPT-->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

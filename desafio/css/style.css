@@ -286,6 +286,7 @@ nav{
     color: #FAFAFA;
     background-color: #22272E;
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 /*Menu contato*/

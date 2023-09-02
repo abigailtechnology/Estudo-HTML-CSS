@@ -8,10 +8,10 @@
     --color-dark-100: #22272E;
     --color-dark-900: #000;
 
-    /* Purple */
+    /* Pink */
     --color-pink-50: #E9749F;
     --color-pink-100: #FCB7D0;
-    
+    --color-pink-200: #ec459f;
 
     /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-pink-50), var(--color-pink-100));

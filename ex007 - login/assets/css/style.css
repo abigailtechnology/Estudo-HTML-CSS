@@ -15,10 +15,9 @@
 
     /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-pink-50), var(--color-pink-100));
-    --gradient-radial: radial-gradient(ellipse at center,  #8825FC 0%,#5e00cd 100%);
-
+   
     /*button*/
-    --button: #763DF2;
+    --button: #DA08B5;
 
 }
 *{
@@ -144,7 +143,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #763DF2 30%, #F2F2F2 10% ,#F2F2F2 60%);
+    background-image: linear-gradient(to bottom, var(--color-pink-200) 30%, #F2F2F2 10% ,#F2F2F2 60%);
 }
  
 /*Formulario*/
@@ -243,16 +242,17 @@ button {
     border-radius: 8px;
     width: 150px;
     border-color: var(--button);
-    color: var(--button);
-    background-color: transparent;
+    color: var(--color-light-50);
+  
+    background-color: var(--button);
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 2%;
 }
 .select_btn:hover{
-    background-color: var(--button);
-    color: var(--color-light-50);
+    background-color: transparent;
+    color: var(--button);
     transition: 0.3s ease-in-out;
 } 
 .btn{
@@ -261,10 +261,10 @@ button {
     font-weight: 600;
     border: solid 2px;
     border-radius: 8px;
-    width: 250px;
-    border-color: var(--button);
+    width: 175px;
+    border-color: #E53E3E;
     color: var(--color-light-50);
-    background-color: var(--button);
+    background-color: #E53E3E;
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -273,7 +273,7 @@ button {
 }
 .btn:hover{
     background-color: transparent;
-    color: var(--button);
+    color: #E53E3E;
     transition: 0.3s ease-in-out;
 }
 
@@ -344,7 +344,6 @@ font-size: 12px;
      
     align-items: center;
     align-content: center;
-    background-color: red;
     margin: 0;
     padding: 0;
 }

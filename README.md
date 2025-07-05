@@ -1,8 +1,16 @@
-#Repositório de estudos
-<h1>Repositório de estudos WEB</h1>
-<h2> Versão HTML E CSS</h2>
-<p>Esse repositório faz parte de uma coleção que contém atividades de HTML5/CSS3 e PHP. Sendo dividos em outros repositórios com as matérias equivalentes</p>
-#futuramente Java Script
-<hr>
-<a href="https://github.com/abigailtechnology/Estudo-PHP"> Confira o repositório de PHP </a>
+# Repositório de estudos WEB
 
+## Versão HTML E CSS
+
+Esse repositório faz parte de uma coleção que contém atividades de HTML5/CSS3, JS e PHP. Sendo dividos em outros repositórios com as matérias correspondentes
+
+> futuramente Java Script
+
+### Confira o [repositório de PHP](https://github.com/abigailtechnology/Estudo-PHP).
+
+### Confira o [repositório de JavaScript](https://github.com/abigailtechnology/7DaysOfCode-JS).
+
+### Confira alguns repositório com React:
+
+- [Alura-React_TS](https://github.com/abigailtechnology/Alura-React_TS)
+<!-- - [Curso React]() -->

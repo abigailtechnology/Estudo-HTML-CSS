@@ -16,6 +16,15 @@
 body{
     background-color: var(--primary-color);
 }
+
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /*padding: 0 0 0 50%;*/
+}
+
 /*nav{
     sposition: sticky;
     display: flex;

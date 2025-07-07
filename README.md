@@ -13,4 +13,4 @@ Esse repositório faz parte de uma coleção que contém atividades de HTML5/CSS
 ### Confira alguns repositório com React:
 
 - [Alura-React_TS](https://github.com/abigailtechnology/Alura-React_TS)
-<!-- - [Curso React]() -->
+- [Curso React](https://github.com/abigailtechnology/cursoReact)

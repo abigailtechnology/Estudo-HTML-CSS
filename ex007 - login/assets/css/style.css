@@ -1,7 +1,7 @@
 /* variaveis das cores*/
 :root {
     /* Light */
-    --color-light-50: #F2F2F2;
+    --color-light-50: #FBF0FC;
 
     /* Dark */
     --color-dark-50:  #797984;
@@ -11,7 +11,7 @@
     /* Pink */
     --color-pink-50:  #FCB7D0;
     --color-pink-100: #E9749F;
-    --color-pink-200: #ec459f;
+    --color-pink-200: #EC459F;
 
     /* Gradient */
     --color-gradient: linear-gradient(90deg, var(--color-pink-50), var(--color-pink-100));
@@ -41,52 +41,13 @@ h1{
  text-align: center;
 }*/
 
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-.label{
-    background-color: #111;
-    border-radius: 50px;
-    cursor: pointer;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 5px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-
-    transform: scale(1.5);
-}
-
-.label .ball{
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-
-    height: 22px;
-    width: 22px;
-
-    transform: translateX(0px); /* Começa da esquerda*/
-    transition: transform 0.2s linear;/*usado para fazer transição suave */
-}
-
-/* Quando clicar na checkbox terá as config: */
-.checkbox:checked + .label .ball{
-    transform: translateX(24px); /* mexe o botão */
-}
-
 /*Icones*/
 .fa-moon{
-    color: #F1C40F;
+    color: #FCC737;
 }
 .fa-sun{
-    color: #F39C12;
+   /* color: #c99403;*/
+   color:#F39C12;
 }
 
 #mode_icon {
@@ -351,6 +312,12 @@ font-size: 12px;
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {
     color: var(--color-light-50);
+}
+.dark#login_form .cadastro span{
+	color: #EC459F;
+}
+.dark#login_form .social_media i{
+	color: #B9136C;
 }
 @keyframes dark-to-light-background {
     0% {

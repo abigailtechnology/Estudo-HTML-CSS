@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="menu.css" type="text/css">
@@ -14,17 +15,10 @@
 
 <body>
     <main id="container">
-        <form id="login_form" method="post" action="valida_login.php">
+        <form id="login_form" method="post" action="#">
             <div id="form_header">
                 <h1>Login</h1>
                 <i id="mode_icon" class="fas fa-moon"></i>
-
-                <!-- <input type="checkbox" class="checkbox" id="chk" />
-                    <label class="label" for="chk">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                        <div class="ball"></div>
-                    </label> -->
             </div>
             <div class="inputs">
                 <div class="input-box">
@@ -58,15 +52,13 @@
             </div>
             <button type="submit" id="login_bt"> Login</button>
             <div class="cadastro">
-                <a href="cadastro.php">Não tem cadastro? <span class="cad">Cadastra-se </span></a>
-
-
+                <a href="#">Não tem cadastro? <span class="cad">Cadastra-se </span></a>
             </div>
             <div class="rodape">
                 <div class="social_media">
-                    <a href="#"> <i class="fab fa-facebook"></i> </a>
-                    <a href="#"> <i class="fab fa-google"></i> </a>
-                    <a href="#"> <i class="fab fa-github"></i> </a>
+                    <a href="#" title="Faça login com Facebook"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#" title="Faça login com Google"> <i class="fab fa-google"></i> </a>
+                    <a href="#" title="Faça login com GitHub"> <i class="fab fa-github"></i> </a>
                 </div>
             </div>
         </form>
@@ -76,5 +68,5 @@
 
     <!-- JAVA SCRIPT-->
     <script src="assets/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
-</body> </html>
+</body>
+</html>
